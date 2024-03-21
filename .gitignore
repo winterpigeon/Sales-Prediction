@@ -41,7 +41,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-
+# Python files
+venv/
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
