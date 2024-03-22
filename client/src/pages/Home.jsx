@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Predict from './components/predictPage';
-function App() {
-    // const [data, setData] = useState('');
+import Predict from 'components/predictPage';
+
+const Home = () => {
+  // const [data, setData] = useState('');
 
     // useEffect(() => {
     //     fetchData();
@@ -24,4 +25,4 @@ function App() {
     );
 }
 
-export default App;
+export default Home;
