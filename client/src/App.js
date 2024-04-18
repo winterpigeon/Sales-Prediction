@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import Predict from './components/predictPage';
+// import axios from 'axios';
+// import Predict from './components/predictPage';
+import ForecastPage from './components/forecastPage';
 function App() {
     // const [data, setData] = useState('');
 
@@ -18,8 +19,8 @@ function App() {
     // };
 
     return (
-        <div className='w-full h-screen mt-0 pt-0'>
-            <Predict/>
+        <div className='w-full min-h-screen mt-0 pt-0  ' >
+            <ForecastPage/>
         </div>
     );
 }

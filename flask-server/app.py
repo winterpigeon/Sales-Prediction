@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import joblib
 import pandas as pd
 from salesmodel import prepare_dataset
+from graphingSalesJson import postTrainData
 from salesmodel import finalize_dataline
 app = Flask(__name__)
 
@@ -28,6 +29,13 @@ def predict():
     print(predictions)
     # Optionally, you can return the predictions as JSON
     return jsonify({"predictions": predictions.tolist()})
+
+
+@app.route('/forecast', methods=['POST', 'GET'])
+def forecast():
+    pastsales = postTrainData()
+    print(pastsales)
+    return jsonify(pastsales)
 
 
 if __name__ == '__main__':

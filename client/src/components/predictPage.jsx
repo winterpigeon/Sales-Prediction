@@ -45,7 +45,7 @@ const [predictedSales, setPredictedSales] = useState('');
     <div className='w-full h-full flex flex-row flex-wrap justify-center items-center bg-gradient-to-t from-sky-700 to-blue-500'>
 
     
-    <div className='w-1/5 sticky left-0 top-[4rem]'>
+    <div className='w-1/5 h-full'>
     <Sidebar/>
     </div>
     <div className='w-4/5 h-[95vh] flex justify-center items-center'>
