@@ -1,0 +1,24 @@
+.upload{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 30vw;
+  margin-top: 20vh;
+  height: 25vh;
+  gap: 2vh;
+  box-sizing: border-box;
+  padding: 2vh 0;
+}
+
+.label{
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.submit{
+  background-color: var(--blue);
+  padding: 1vh 1vw;
+  color: white;
+  border-radius: 5px;
+}

@@ -69,17 +69,17 @@ model.add(Dropout(0.2))
 model.add(LSTM(32, activation='relu', return_sequences=False))
 model.add(Dense(1))
 model.compile(optimizer='adam', loss='mse')
-loaded_model = load_model('LSTM_model4.keras')
+# loaded_model = load_model('LSTM_model4.keras')
 # Model training
-loaded_model.fit(generator, epochs=100, verbose=1)
-loss_per_epoch = loaded_model.history.history['loss']
+model.fit(generator, epochs=100, verbose=1)
+loss_per_epoch = model.history.history['loss']
 plt.plot(range(len(loss_per_epoch)), loss_per_epoch)
 # Predictions
 test_predictions = []
 first_eval_batch = scaled_train[-n_input:]
 current_batch = first_eval_batch.reshape((1, n_input, n_features))
 for i in range(len(test)):
-    current_pred = loaded_model.predict(current_batch)[0]
+    current_pred = model.predict(current_batch)[0]
     test_predictions.append(current_pred)
     current_batch = np.append(current_batch[:, 1:, :], [
                               [current_pred]], axis=1)
@@ -95,4 +95,4 @@ print("Mean:", test['y'].mean())
 # Visualization
 test.plot(figsize=(12, 6))
 plt.show()
-loaded_model.save('LSTM_model6.keras')
+model.save('LSTM_model6.keras')

@@ -5,7 +5,7 @@ export default function Navbarr(){
   return (
     <Navbar maxWidth="full" className="pt-0 mt-0 " position="sticky">
       <NavbarContent justify="start">
-        <Button color="primary">Sales Prediction</Button>
+        <Button color="primary">ForecastMaster</Button>
         </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
