@@ -15,7 +15,7 @@ This project aims to help businesses make informed decisions by predicting futur
 
 ## Screenshots
 
-### Home Page
+### Home Page ![homepage](Sales-Prediction/assets/homepagescreenshot)
 ### Upload Data
 ### Prediction Results
 ## Technologies Used
