@@ -15,9 +15,11 @@ This project aims to help businesses make informed decisions by predicting futur
 
 ## Screenshots
 
-### Home Page ![homepage](Sales-Prediction/assets/homepagescreenshot)
-### Upload Data
-### Prediction Results
+### Home Page ![homepage](assets/homepagescreenshot.png)
+### Upload Data ![upload](assets/uploadscreenshot.png)
+### Prediction Results ![regression](assets/lstmscreenshot.png)
+![pastsales](assets/pastsalesscreenshot.png)
+![futuresales](assets/futuresalesscreenshot.png)
 ## Technologies Used
 
 ### Front-End
